@@ -92,7 +92,7 @@ header {
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem;
-  padding: 1.4rem 0;
+  padding: 0.85rem 0;
 }
 
 /* Brand */
@@ -104,9 +104,9 @@ header {
 }
 
 .brand-logo {
-  width: 80px;
-  height: 80px;
-  border-radius: 50px;
+  width: 38px;
+  height: 38px;
+  border-radius: 18px;
   background: radial-gradient(circle at 20% 0, #e0f2ff 0, #0f172a 45%);
   display: flex;
   align-items: center;
@@ -127,7 +127,7 @@ header {
 
 .brand-title {
   font-family: 'Outfit', sans-serif;
-  font-size: 1.25rem;
+  font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -147,7 +147,7 @@ header {
 }
 
 .nav-links a {
-  font-size: 1.2rem;
+  font-size: 0.88rem;
   color: var(--muted);
   padding: 0.35rem 0.65rem;
   border-radius: 999px;
@@ -165,8 +165,8 @@ header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   border-radius: 999px;
   border: 1px solid rgba(148, 163, 184, 0.55);
   background: rgba(255, 255, 255, 0.8);
@@ -182,8 +182,8 @@ header {
 
 /* Rasmlarni cheklash — kengayib ketmasligi uchun */
 .badge-outline img {
-  width: 32px;
-  height: 32px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
   display: block;
   flex-shrink: 0;
@@ -849,7 +849,6 @@ section {
 
 .service-card-inner {
   max-width: 1120px;
-  height: 400;
   margin: 0 auto;
   border-radius: 28px;
   background: rgba(255, 255, 255, 0.92);
@@ -928,7 +927,7 @@ section {
   overflow: hidden;
   border-radius: 20px;
   background: #e5e7eb;
-  height: 400px;
+  height: 280px;
   flex-shrink: 0;
 }
 
@@ -1623,7 +1622,7 @@ footer {
   }
 
   .service-media {
-    height: 400px;
+    height: 220px;
   }
 }
 
@@ -1682,5 +1681,228 @@ footer {
 
   .faq-contact-value {
     text-align: left;
+  }
+}
+
+/* ============================================================
+   LANG & DARK TOGGLE TUGMALARI
+   ============================================================ */
+.header-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.55);
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+}
+
+.header-btn:hover {
+  background: rgba(219, 234, 254, 0.8);
+  border-color: rgba(99, 163, 235, 0.55);
+  transform: translateY(-1px);
+}
+
+/* ============================================================
+   DARK MODE
+   ============================================================ */
+html.dark {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --muted: #94a3b8;
+  --white: #1e293b;
+}
+
+html.dark body {
+  background: radial-gradient(circle at top left, #0f2040 0, #0f172a 45%),
+    radial-gradient(circle at bottom right, #111827 0, #0f172a 55%);
+  color: var(--text);
+}
+
+html.dark header {
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.95),
+    rgba(15, 23, 42, 0.80),
+    transparent
+  );
+  border-bottom-color: rgba(100, 116, 139, 0.3);
+}
+
+html.dark .header-btn,
+html.dark .badge-outline {
+  background: rgba(30, 41, 59, 0.9);
+  border-color: rgba(100, 116, 139, 0.5);
+  color: #e2e8f0;
+}
+
+html.dark .nav-links a {
+  color: #94a3b8;
+}
+
+html.dark .nav-links a:hover {
+  background: rgba(30, 41, 59, 0.8);
+  color: #93c5fd;
+}
+
+html.dark .stat-card {
+  background: rgba(30, 41, 59, 0.9);
+  border-color: rgba(100, 116, 139, 0.3);
+}
+
+html.dark .service-card {
+  background: linear-gradient(135deg, #111827, #1e293b) !important;
+}
+
+html.dark .service-card:nth-of-type(2) {
+  background: linear-gradient(135deg, #0f1f3d, #1a2a4a) !important;
+}
+
+html.dark .service-card:nth-of-type(3) {
+  background: linear-gradient(135deg, #0f172a, #1e2a3a) !important;
+}
+
+html.dark .service-card-inner {
+  background: rgba(15, 23, 42, 0.92);
+  border-color: rgba(100, 116, 139, 0.3);
+}
+
+html.dark .service-title-main {
+  color: #e2e8f0;
+}
+
+html.dark .faq-item {
+  background: rgba(30, 41, 59, 0.95);
+  border-color: rgba(100, 116, 139, 0.3);
+}
+
+html.dark .location-card {
+  background: rgba(15, 23, 42, 0.96);
+  border-color: rgba(100, 116, 139, 0.3);
+  color: #e2e8f0;
+}
+
+html.dark footer {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95), #0a1628);
+  border-top-color: rgba(100, 116, 139, 0.3);
+}
+
+html.dark .brand-title,
+html.dark .footer-brand-title {
+  color: #e2e8f0;
+}
+
+/* ============================================================
+   MOBILDA LOGO KICHRAYISHI (scroll yoki kichik ekran)
+   ============================================================ */
+@media (max-width: 768px) {
+  .brand-logo {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+  }
+
+  .brand-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 14px;
+  }
+
+  .brand-title {
+    font-size: 0.72rem;
+  }
+
+  .brand-subtitle {
+    display: none;
+  }
+
+  .header-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .brand-logo {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+  }
+}
+
+/* ============================================================
+   SCROLL — HEADER KICHRAYISHI
+   ============================================================ */
+header.scrolled .brand-logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+header.scrolled .nav {
+  padding: 0.7rem 0;
+}
+
+/* ============================================================
+   NAV OVERFLOW FIX
+   ============================================================ */
+.nav {
+  gap: 0.4rem;
+  flex-wrap: nowrap;
+}
+
+/* Brand matnini kichraytirish */
+.brand-title {
+  font-size: 0.78rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 180px;
+}
+
+/* Nav havolalar — o'rtacha ekranlarda yashir */
+@media (max-width: 1024px) {
+  .nav-links {
+    display: none;
+  }
+  .nav-toggle {
+    display: flex;
+  }
+}
+
+/* Kichik ekranda telefon tugmasini yashir */
+@media (max-width: 860px) {
+  .nav-phone {
+    display: none;
+  }
+}
+
+/* Juda kichik ekranda brand matnini to'liq yashir */
+@media (max-width: 480px) {
+  .brand-text {
+    display: none;
+  }
+  .header-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 0.7rem;
+  }
+  .badge-outline {
+    width: 34px;
+    height: 34px;
+  }
+  .badge-outline img {
+    width: 18px;
+    height: 18px;
   }
 }
