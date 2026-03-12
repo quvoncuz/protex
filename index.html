@@ -1,390 +1,227 @@
 <!DOCTYPE html>
-<html lang="uz">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>KONDISIINER VA KATYOL REMONTI | Toshkent servisi</title>
-    <meta name="description" content="Toshkent shahrida konditsioner, isitish katyoli va kir mashinalarini tezkor va kafolatli ta'mirlash xizmati." />
-    <meta name="robots" content="index,follow" />
-    <link rel="icon" type="image/png" href="images/logo/main.png" />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="page">
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ProffService</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-      <!-- HEADER -->
-      <header>
-        <div class="container">
-          <nav class="nav">
-            <a href="#hero" class="brand">
-              <div class="brand-logo"><img src="images/logo/main.png" alt="logo"></div>
-              <div class="brand-text">
-                <div class="brand-title">KONDISIINER VA KATYOL REMONTI</div>
-                <div class="brand-subtitle" id="brand-subtitle-el">Toshkent bo'yicha tezkor servis</div>
-              </div>
-            </a>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <a href="#" class="nav-logo">
+    <img src="img/logo/logo.png" alt="logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="icon-box" style="display:none">🔧</div>
+    <span>PROFFSERVICE</span>
+  </a>
+  <div class="nav-center">📍 <span data-i18n="nav_title"></span></div>
+  <div class="nav-socials">
+    <a href="#" aria-label="Instagram"><img src="img/logo/instagram.png" alt=""></a>
+    <a href="#" aria-label="Telegram"><img src="img/logo/telegram.png" alt=""></a>
+  </div>
+  <div class="lang-switcher">
+    <button class="lang-btn active" data-lang="ru">RU</button>
+    <button class="lang-btn" data-lang="uz">UZ</button>
+    <button class="lang-btn" data-lang="en">EN</button>
+  </div>
+  <a href="tel:+998976829999" class="nav-phone">+998 97 682 99 99</a>
+  <button class="burger" id="burger">&#9776;</button>
+</nav>
 
-            <div class="nav-links" id="navLinks">
-              <a href="#services">Xizmatlar</a>
-              <a href="#faq">Savollar</a>
-            </div>
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" data-i18n="menu_services"></a>
+  <a href="#about" data-i18n="menu_about"></a>
+  <a href="#works" data-i18n="menu_works"></a>
+  <a href="tel:+998976829999">📞 +998 97 682 99 99</a>
+  <a href="tel:+998336829999">📞 +998 33 682 99 99</a>
+</div>
 
-            <!-- Til + Dark mode tugmalari -->
-            <button id="langToggle" class="header-btn" aria-label="Tilni o'zgartirish">RU</button>
-            <button id="darkToggle" class="header-btn" aria-label="Dark mode">🌙</button>
-
-            <a href="https://t.me/username" target="_blank" rel="noopener noreferrer" class="badge-outline" aria-label="Telegram">
-              <img src="images/logo/telegram.png" alt="Telegram" />
-            </a>
-            <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" class="badge-outline" aria-label="Instagram">
-              <img src="images/logo/instagram.png" alt="Instagram" />
-            </a>
-
-            <a href="tel:+998901234567" class="nav-phone">
-              <span>TEL: +998 90 123 45 67</span>
-            </a>
-
-            <button type="button" aria-label="Menyuni ochish" class="nav-toggle" id="navToggle">
-              <span></span><span></span>
-            </button>
-          </nav>
-        </div>
-      </header>
-
-      <main>
-
-        <!-- HERO -->
-        <section class="hero" id="hero">
-          <div class="container">
-            <div class="hero-grid">
-              <div class="hero-left">
-                <div class="hero-kicker">
-                  <span class="hero-kicker-dot"></span>
-                  <span id="hero-kicker-text">24/7 tezkor texnika ta'miri</span>
-                </div>
-                <h1 class="hero-title">
-                  <span id="hero-title-text">KONDISIINER VA KATYOL REMONTI</span>
-                </h1>
-                <p class="hero-subtitle" id="hero-subtitle">Toshkent bo'yicha konditsioner, isitish katyoli va kir mashinasini tezkor, sifatli va kafolatli ta'mirlash xizmati.</p>
-                <div class="hero-phone">
-                  <a href="tel:+998901234567">+998 90 123 45 67</a>
-                  <span id="hero-phone-label">Ustaga bevosita qo'ng'iroq</span>
-                </div>
-                <div class="hero-actions">
-                  <a href="tel:+998901234567" class="btn-primary">
-                    <span id="btn-call">Qo'ng'iroq qilish</span> <span>→</span>
-                  </a>
-                  <a href="#services" class="btn-secondary" id="btn-services">Xizmatlarni ko'rish</a>
-                </div>
-                <div class="social-row">
-                  <div class="social-label" id="social-label">Tez aloqa:</div>
-                  <div class="social-icons">
-                    <a href="https://t.me/username" target="_blank" rel="noopener noreferrer" class="badge-outline" aria-label="Telegram">
-                      <img src="images/logo/telegram.png" alt="Telegram" />
-                    </a>
-                    <a href="https://instagram.com/username" target="_blank" rel="noopener noreferrer" class="badge-outline" aria-label="Instagram">
-                      <img src="images/logo/instagram.png" alt="Instagram" />
-                    </a>
-                  </div>
-                </div>
-                <div class="hero-meta">
-                  <div class="hero-meta-pill" id="hero-meta-pill">24/7 xizmat</div>
-                  <div class="hero-meta-note" id="hero-meta-note">Toshkent bo'ylab manzilingizga chiqib boramiz</div>
-                </div>
-                <div class="hero-stats">
-                  <div class="stat-card"><div class="stat-value" id="stat1-val">1000+</div><div class="stat-label" id="stat1-label">Mamnun mijozlar</div></div>
-                  <div class="stat-card"><div class="stat-value" id="stat2-val">8+ yil</div><div class="stat-label" id="stat2-label">Tajriba</div></div>
-                  <div class="stat-card"><div class="stat-value" id="stat3-val">24/7</div><div class="stat-label" id="stat3-label">Tezkor xizmat</div></div>
-                  <div class="stat-card"><div class="stat-value" id="stat4-val">100%</div><div class="stat-label" id="stat4-label">Kafolat</div></div>
-                </div>
-              </div>
-
-              <div class="hero-right">
-                <div class="hero-slider" id="heroSlider">
-                  <img src="images/usta/main.png" alt="" class="active" />
-                  <img src="images/usta/img2.png" alt="" />
-                  <img src="images/usta/img3.png" alt="" />
-                  <div class="hero-slider-label" id="hero-slider-label">Professional ta'mirlash xizmati</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- XIZMATLAR -->
-        <section id="services">
-          <div class="container">
-            <div class="section-header" style="flex-direction:column;align-items:center;text-align:center">
-              <div>
-                <div class="section-kicker" id="sec-services-kicker">Bizning xizmatlarimiz</div>
-                <h2 class="section-title" id="sec-services-title">Nimani ta'mirlaymiz?</h2>
-              </div>
-              <p class="section-desc" id="sec-services-desc" style="max-width:560px">Konditsioner, isitish katyoli va kir yuvish mashinalaringizni Toshkent bo'yicha uy yoki ofisingizda ta'mirlab beramiz.</p>
-            </div>
-            <div class="services-grid">
-              <div class="services-main">
-
-                <!-- Katyol -->
-                <article class="service-card fade-in" data-delay="0">
-                  <div class="service-card-inner">
-                    <div>
-                      <div class="service-tag" id="kat-tag">Isitish katyollari remonti</div>
-                      <h3 class="service-title-main" id="kat-title">Tez va sifatli katyol remonti</h3>
-                      <p class="service-subtitle-main" id="kat-sub">Har qanday turdagi katyolni uyda yoki zavod sharoitida ta'mirlash.</p>
-                      <p class="service-text" id="kat-text">Mutaxassislarimiz katyolingizni tez va aniq diagnostika qilib, kerakli ehtiyot qismlarni almashtiradi.</p>
-                      <ul class="service-bullets">
-                        <li id="kat-b1">Gaz va elektr katyollari uchun to'liq diagnostika</li>
-                        <li id="kat-b2">Issiqlik almashinish va bacalarni chuqur tozalash</li>
-                        <li id="kat-b3">Nasos, avtomatika va elektron platalarni ta'mirlash</li>
-                        <li id="kat-b4">Mavsumiy ishga tushirish va profilaktika</li>
-                      </ul>
-                      <p class="service-note" id="kat-note">Belgilangan narx ish jarayonida o'zgarmaydi.</p>
-                    </div>
-                    <div class="service-media">
-                      <img src="images/kat/main.png" alt="Katyol 1" class="service-image active" />
-                      <img src="images/kat/kat1.png" alt="Katyol 2" class="service-image" />
-                      <img src="images/kat/kat2.png" alt="Katyol 3" class="service-image" />
-                      <img src="images/kat/kat3.png" alt="Katyol 4" class="service-image" />
-                      <img src="images/kat/kat4.png" alt="Katyol 5" class="service-image" />
-                      <img src="images/kat/kat5.png" alt="Katyol 6" class="service-image" />
-                      <div class="service-image-label" id="kat-img-label">Tez va ishonchli katyol servisi</div>
-                    </div>
-                  </div>
-                </article>
-
-                <!-- Konditsioner -->
-                <article class="service-card fade-in" data-delay="80">
-                  <div class="service-card-inner">
-                    <div>
-                      <div class="service-tag" id="ref-tag">Konditsioner remonti</div>
-                      <h3 class="service-title-main" id="ref-title">Sovuq va issiq rejimda barqaror ish</h3>
-                      <p class="service-subtitle-main" id="ref-sub">Gaz to'ldirish, tozalash va murakkab remont ishlari bir joyda.</p>
-                      <p class="service-text" id="ref-text">Konditsioneringiz yaxshi sovutmayaptimi — ustalarimiz joyiga borib, muammoni aniq aniqlashadi va tezda bartaraf etishadi.</p>
-                      <ul class="service-bullets">
-                        <li id="ref-b1">Freon gazini normaga muvofiq to'ldirish</li>
-                        <li id="ref-b2">Ichki va tashqi blokni chuqur tozalash va dezinfeksiya</li>
-                        <li id="ref-b3">Kompessor, plata va pult ta'miri</li>
-                        <li id="ref-b4">Mavsumiy profilaktika va ishga tushirish</li>
-                      </ul>
-                      <p class="service-note" id="ref-note">Tozalanib turgan konditsioner elektr sarfini kamaytiradi.</p>
-                    </div>
-                    <div class="service-media">
-                      <img src="images/ref/main.png" alt="Konditsioner 1" class="service-image active" />
-                      <img src="images/ref/ref1.png" alt="Konditsioner 2" class="service-image" />
-                      <img src="images/ref/ref2.png" alt="Konditsioner 3" class="service-image" />
-                      <img src="images/ref/ref3.png" alt="Konditsioner 4" class="service-image" />
-                      <img src="images/ref/ref4.png" alt="Konditsioner 5" class="service-image" />
-                      <div class="service-image-label" id="ref-img-label">Professional konditsioner xizmati</div>
-                    </div>
-                  </div>
-                </article>
-
-                <!-- Kir mashina -->
-                <article class="service-card fade-in" data-delay="140">
-                  <div class="service-card-inner">
-                    <div>
-                      <div class="service-tag" id="mach-tag">Kir mashina remonti</div>
-                      <h3 class="service-title-main" id="mach-title">Uy sharoitida qulay kir mashina servisi</h3>
-                      <p class="service-subtitle-main" id="mach-sub">Motor, nasos va elektron qismlar ta'miri hammasi bir joyda.</p>
-                      <p class="service-text" id="mach-text">Mashina suv olmayaptimi — biz muammoni joyida ko'rib chiqamiz va zarur bo'lsa, ustaxonaga olib ketib, to'liq ta'mirlab qaytaramiz.</p>
-                      <ul class="service-bullets">
-                        <li id="mach-b1">Motor, podshipnik va remenlarni almashtirish</li>
-                        <li id="mach-b2">Nasos va drenaj tizimini tozalash va ta'mirlash</li>
-                        <li id="mach-b3">Elektron plata, datchik va boshqaruv paneli ta'miri</li>
-                        <li id="mach-b4">Tezkor test va balanslash ishlari</li>
-                      </ul>
-                      <p class="service-note" id="mach-note">Ish tugagach, to'liq test o'tkazib beramiz va kafolat muddatini yozma ravishda beramiz.</p>
-                    </div>
-                    <div class="service-media">
-                      <img src="images/mach/main.png" alt="Kir mashina 1" class="service-image active" />
-                      <img src="images/mach/mach1.png" alt="Kir mashina 2" class="service-image" />
-                      <img src="images/mach/mach2.png" alt="Kir mashina 3" class="service-image" />
-                      <div class="service-image-label" id="mach-img-label">Uyga kelib kir mashina ta'miri</div>
-                    </div>
-                  </div>
-                </article>
-
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- HAQIDA -->
-        <section id="about">
-          <div class="container">
-            <div class="section-header">
-              <div>
-                <div class="section-kicker" id="about-kicker">Kompaniya haqida</div>
-                <h2 class="section-title" id="about-title">8 yildan ortiq tajribali servis markazi</h2>
-              </div>
-              <p class="section-desc" id="about-desc">Har bir buyurtmaga individual yondashuv, adolatli narx va aniq muddat.</p>
-            </div>
-            <div class="about-grid">
-              <div class="about-text fade-in">
-                <p id="about-p1">Toshkent shahrida 8 yildan ortiq tajribaga ega servis markazi.</p>
-                <p id="about-p2">Biz mijozlarga qulay narx, tezkor xizmat va ishonchli natija taklif qilamiz.</p>
-                <p id="about-p3">Qanday holatda texnikangiz ishlamay qolgan bo'lsa ham — avval diagnostika o'tkazamiz.</p>
-                <div class="about-highlights">
-                  <div class="about-chip" id="about-chip1">Toshkent bo'ylab manzilingizga chiqib boramiz</div>
-                  <div class="about-chip" id="about-chip2">Original ehtiyot qismlar bilan ishlaymiz</div>
-                  <div class="about-chip" id="about-chip3">Har bir ish bo'yicha kafolat beramiz</div>
-                </div>
-              </div>
-              <div class="about-media fade-in" data-delay="120">
-                <div class="about-card">
-                  <div class="about-card-header">
-                    <div>
-                      <div class="about-card-title" id="about-card-title">Servis markazi ofisi</div>
-                      <div class="about-card-sub" id="about-card-sub">Toshkent, markaziy hudud</div>
-                    </div>
-                    <div class="about-badge" id="about-badge">Tajriba 8+ yil</div>
-                  </div>
-                  <div class="about-grid-inner">
-                    <div class="about-photo">
-                      <div class="about-photo-inner">
-                        <div class="about-photo-title" id="about-team-title">Ustalar jamoasi</div>
-                        <div class="about-photo-text" id="about-team-text">Har bir yo'nalish bo'yicha alohida mutaxassislar jamoasi mijozlar chaqiruviga tezkor javob beradi.</div>
-                      </div>
-                      <div class="about-photo-tag" id="about-tag">Servis ofisi</div>
-                    </div>
-                    <div class="about-metrics">
-                      <div class="about-metric">
-                        <span class="about-metric-label" id="about-m1-label">Yillik buyurtmalar</span>
-                        <span class="about-metric-value" id="about-m1-val">1200+</span>
-                      </div>
-                      <div class="about-metric">
-                        <span class="about-metric-label" id="about-m2-label">Qayta murojaatlar</span>
-                        <span class="about-metric-value" id="about-m2-val">70%</span>
-                      </div>
-                      <div class="about-metric">
-                        <span class="about-metric-label" id="about-m3-label">O'rtacha baho</span>
-                        <span class="about-metric-value" id="about-m3-val">4.9 / 5</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="about-tagline" id="about-tagline">Biz uchun eng katta reklama — bu mamnun mijozlarning tavsiyasi.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- FAQ -->
-        <section id="faq">
-          <div class="container">
-            <div class="section-header">
-              <div>
-                <div class="section-kicker" id="faq-kicker">Ko'p so'raladigan savollar</div>
-                <h2 class="section-title" id="faq-title">Savollaringizga qisqa javoblar</h2>
-              </div>
-              <p class="section-desc" id="faq-desc">Quyida eng ko'p beriladigan savollarga javoblarni jamladik.</p>
-            </div>
-            <div class="faq-grid">
-              <div class="faq-list">
-                <div class="faq-item fade-in" data-delay="0">
-                  <div class="faq-question"><h3 id="faq-q1">Usta qancha vaqtda keladi?</h3><div class="faq-toggle">+</div></div>
-                  <div class="faq-answer" id="faq-a1">Toshkent bo'ylab o'rtacha yetib borish vaqti 40–60 daqiqa.</div>
-                </div>
-                <div class="faq-item fade-in" data-delay="60">
-                  <div class="faq-question"><h3 id="faq-q2">Remont qancha vaqt oladi?</h3><div class="faq-toggle">+</div></div>
-                  <div class="faq-answer" id="faq-a2">Oddiy nosozliklar 1–2 soat ichida joyida hal qilinadi.</div>
-                </div>
-                <div class="faq-item fade-in" data-delay="110">
-                  <div class="faq-question"><h3 id="faq-q3">Kafolat bormi?</h3><div class="faq-toggle">+</div></div>
-                  <div class="faq-answer" id="faq-a3">Albatta. Har bir bajarilgan ish turi bo'yicha yozma kafolat beriladi.</div>
-                </div>
-                <div class="faq-item fade-in" data-delay="160">
-                  <div class="faq-question"><h3 id="faq-q4">Toshkent bo'ylab xizmat qilasizlarmi?</h3><div class="faq-toggle">+</div></div>
-                  <div class="faq-answer" id="faq-a4">Ha, Toshkent shahri va yaqin tumanlarning barcha hududlarida xizmat ko'rsatamiz.</div>
-                </div>
-              </div>
-              <aside class="faq-aside fade-in" data-delay="220">
-                <h3 id="faq-aside-title">Qo'shimcha savollaringiz bormi?</h3>
-                <p id="faq-aside-p">Agar texnikangiz bilan bog'liq vaziyatni tushuntirib bersangiz, ustamiz telefon orqali taxminiy muammoni aytib berishi mumkin.</p>
-                <div class="faq-contact">
-                  <div class="faq-contact-row"><span class="faq-contact-label" id="faq-phone-label">Telefon:</span><a href="tel:+998901234567" class="faq-contact-value">+998 90 123 45 67</a></div>
-                  <div class="faq-contact-row"><span class="faq-contact-label" id="faq-tg-label">Telegram:</span><a href="https://t.me/username" target="_blank" rel="noopener" class="faq-contact-value">@username</a></div>
-                  <div class="faq-contact-row"><span class="faq-contact-label" id="faq-ig-label">Instagram:</span><a href="https://instagram.com/username" target="_blank" rel="noopener" class="faq-contact-value">@username</a></div>
-                  <div class="faq-contact-row"><span class="faq-contact-label" id="faq-time-label">Ish vaqti:</span><span class="faq-contact-value" id="faq-time-val">24/7 — dam olishsiz</span></div>
-                </div>
-              </aside>
-            </div>
-          </div>
-        </section>
-
-        <!-- LOKATSIYA -->
-        <section id="location">
-          <div class="container">
-            <div class="section-header">
-              <div>
-                <div class="section-kicker" id="loc-kicker">Lokatsiya</div>
-                <h2 class="section-title" id="loc-title">Toshkentdagi servis manzilimiz</h2>
-              </div>
-              <p class="section-desc" id="loc-desc">Quyidagi xarita orqali servis markazimiz lokatsiyasini ko'rishingiz mumkin.</p>
-            </div>
-            <div class="location-grid">
-              <div class="map-wrapper fade-in">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2995.914249868582!2d69.2400734!3d41.2994958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ad1b5a793f9%3A0x8e0c3f5a5d2c0b5b!2sTashkent!5e0!3m2!1sen!2suz!4v1700000000000" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Toshkentdagi servis markazi"></iframe>
-              </div>
-              <aside class="location-card fade-in" data-delay="120">
-                <h3 id="loc-card-title">Manzil va aloqa ma'lumotlari</h3>
-                <div class="location-row"><span class="location-label" id="loc-addr-label">Manzil:</span><span class="location-value" id="loc-addr-val">Toshkent shahri, markaziy hudud</span></div>
-                <div class="location-row"><span class="location-label" id="loc-phone-label">Telefon:</span><span class="location-value"><a href="tel:+998901234567">+998 90 123 45 67</a></span></div>
-                <div class="location-row"><span class="location-label" id="loc-tg-label">Telegram:</span><span class="location-value"><a href="https://t.me/username" target="_blank" rel="noopener">@username</a></span></div>
-                <div class="location-row"><span class="location-label" id="loc-ig-label">Instagram:</span><span class="location-value"><a href="https://instagram.com/username" target="_blank" rel="noopener">@username</a></span></div>
-                <div class="location-row"><span class="location-label" id="loc-time-label">Ish vaqti:</span><span class="location-value" id="loc-time-val">24/7 — dam olish kunlarisiz</span></div>
-                <div class="location-row"><span class="location-label" id="loc-zone-label">Xizmat hududi:</span><span class="location-value" id="loc-zone-val">Toshkent shahri va yaqin tumanlar</span></div>
-                <div class="location-badge">🚗 <span id="loc-badge-text">Usta manzilingizga o'zi boradi</span></div>
-              </aside>
-            </div>
-          </div>
-        </section>
-
-      </main>
-
-      <!-- FOOTER -->
-      <footer>
-        <div class="container">
-          <div class="footer-inner">
-            <div class="footer-brand">
-              <div class="footer-brand-title">KONDISIINER VA KATYOL REMONTI</div>
-              <p id="footer-desc">Toshkent shahrida konditsioner, isitish katyoli va kir mashinalarini professional darajada ta'mirlash xizmati. 24/7 ishlaydigan ishonchli servis markazi.</p>
-            </div>
-            <div class="footer-columns">
-              <div class="footer-col">
-                <h4 id="footer-contact">Aloqa</h4>
-                <ul>
-                  <li><a href="tel:+998901234567">+998 90 123 45 67</a></li>
-                  <li><a href="https://t.me/username" target="_blank" rel="noopener">Telegram: @username</a></li>
-                  <li><a href="https://instagram.com/username" target="_blank" rel="noopener">Instagram: @username</a></li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <h4 id="footer-services-col">Xizmatlar</h4>
-                <ul>
-                  <li id="footer-svc1">Isitish katyoli remonti</li>
-                  <li id="footer-svc2">Konditsioner remonti</li>
-                  <li id="footer-svc3">Kir mashina remonti</li>
-                </ul>
-              </div>
-              <div class="footer-col">
-                <h4 id="footer-info-col">Ma'lumot</h4>
-                <ul>
-                  <li id="footer-info1">Ish vaqti: 24/7</li>
-                  <li id="footer-info2">Toshkent bo'yicha xizmat</li>
-                  <li id="footer-info3">Kafolatli ta'mirlash</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="footer-bottom">
-            <span>© <span id="year"></span> KONDISIINER VA KATYOL REMONTI. <span id="footer-copy-text">Barcha huquqlar himoyalangan.</span></span>
-          </div>
-        </div>
-      </footer>
-
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg">
+    <img src="img/main.png" alt="" onerror="this.style.display='none'">
+  </div>
+  <div class="hero-content">
+    <h1 data-i18n="hero_title"></h1>
+    <p><strong data-i18n="hero_b1"></strong> <span data-i18n="hero_t1"></span></p>
+    <p><strong data-i18n="hero_b2"></strong> <span data-i18n="hero_t2"></span></p>
+    <div class="hero-btns">
+      <a href="tel:+998976829999" class="btn-yellow">+998 97 682 99 99</a>
+      <a href="tel:+998336829999" class="btn-white">+998 33 682 99 99</a>
     </div>
-    <script src="js/main.js"></script>
-  </body>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="services" id="services">
+  <h2><span data-i18n="services_h"></span> <em data-i18n="services_em"></em></h2>
+  <p class="section-sub" data-i18n="services_sub"></p>
+  <div class="services-grid">
+
+    <div class="service-card">
+      <img src="img/kat/1.png" alt="" onerror="this.style.opacity='0.3'">
+      <div class="card-body">
+        <h3 data-i18n="s1_title"></h3>
+        <ul>
+          <li data-i18n="s1_li1"></li>
+          <li data-i18n="s1_li2"></li>
+        </ul>
+        <div class="btn-group">
+  <a href="#" class="btn-sm" data-i18n="btn_more"></a>
+  <a href="tel:+998976829999" class="btn-call">📞 TEL</a>
+</div>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <img src="img/ref/1.png" alt="" onerror="this.style.opacity='0.3'">
+      <div class="card-body">
+        <h3 data-i18n="s2_title"></h3>
+        <ul>
+          <li data-i18n="s2_li1"></li>
+          <li data-i18n="s2_li2"></li>
+        </ul>
+        <div class="btn-group">
+  <a href="#" class="btn-sm" data-i18n="btn_more"></a>
+  <a href="tel:+998976829999" class="btn-call">📞 TEL</a>
+</div>
+      </div>
+    </div>
+
+    <div class="service-card">
+  <img src="img/kon/1.png" alt="" onerror="this.style.opacity='0.3'">
+  <div class="card-body">
+    <h3 data-i18n="s3_title"></h3>
+    <ul>
+      <li data-i18n="s3_li1"></li>
+      <li data-i18n="s3_li2"></li>
+    </ul>
+    <div class="btn-group">
+  <a href="#" class="btn-sm" data-i18n="btn_more"></a>
+  <a href="tel:+998976829999" class="btn-call">📞 TEL</a>
+</div>
+  </div>
+</div>
+
+    <div class="service-card">
+      <img src="img/kir/1.png" alt="" onerror="this.style.opacity='0.3'">
+      <div class="card-body">
+        <h3 data-i18n="s6_title"></h3>
+        <ul>
+          <li data-i18n="s6_li1"></li>
+          <li data-i18n="s6_li2"></li>
+        </ul>
+        <div class="btn-group">
+  <a href="#" class="btn-sm" data-i18n="btn_more"></a>
+  <a href="tel:+998976829999" class="btn-call">📞 TEL</a>
+</div>
+    </div>
+
+  </div>
+</section>
+<section class="cta-section">
+  <div class="cta-banners">
+    <div class="cta-banner">
+      <img class="cbg" src="img/kat/2.png" alt="" onerror="this.src='img/kat/1.jpg'">
+      <h3 data-i18n="cta1"></h3>
+      <a href="tel:+998336829999" class="btn-yellow" data-i18n="btn_call"></a>
+    </div>
+    <div class="cta-banner">
+      <img class="cbg" src="img/ref/2.png" alt="" onerror="this.src='img/ref/1.jpg'">
+      <h3 data-i18n="cta2"></h3>
+      <a href="tel:+998336829999" class="btn-yellow" data-i18n="btn_call"></a>
+    </div>
+    <div class="cta-banner">
+      <img class="cbg" src="img/kir/2.png" alt="" onerror="this.src='img/kon/1.jpg'">
+      <h3 data-i18n="cta3"></h3>
+      <a href="tel:+998336829999" class="btn-yellow" data-i18n="btn_call"></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-inner">
+    <div class="about-text">
+      <h2 data-i18n="about_title"></h2>
+      <p data-i18n="about_p1"></p>
+      <p data-i18n="about_p2"></p>
+      <p data-i18n="about_p3"></p>
+      <div class="thumb-row">
+        <div class="thumb-track">
+          <img src="img/ref/2.png"  alt="" onerror="this.style.display='none'">
+          <img src="img/ref/3.png"  alt="" onerror="this.style.display='none'">
+          <img src="img/kon/2.png"  alt="" onerror="this.style.display='none'">
+          <img src="img/kir/2.png"  alt="" onerror="this.style.display='none'">
+          <img src="img/kir/3.png"  alt="" onerror="this.style.display='none'">
+          <img src="img/kat/3.png"  alt="" onerror="this.style.display='none'">
+          <img src="img/kat/main.png" alt="" onerror="this.style.display='none'">
+        </div>
+      </div>
+      <a href="tel:+998976829999" class="about-phone">📞 +998 97 682 99 99</a>
+    </div>
+    <div class="about-img">
+      <img src="img/kat/2.png" alt="" onerror="this.style.display='none'">
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE BANNER -->
+<section class="exp-banner">
+  <img class="ebg" src="img/kat/1.jpg" alt="" onerror="this.style.display='none'">
+  <div class="exp-content">
+    <small>Proffservice</small>
+    <h2 data-i18n="exp_title"></h2>
+    <p data-i18n="exp_sub"></p>
+    <a href="tel:+998976829999" class="btn-yellow" data-i18n="btn_price"></a>
+  </div>
+</section>
+
+<!-- WORKS -->
+<section class="works" id="works">
+  <h2><span data-i18n="works_h"></span> <em data-i18n="works_em"></em></h2>
+  <p class="section-sub" data-i18n="works_sub"></p>
+  <div class="works-slider-wrap">
+    <button class="slider-btn prev" id="sliderPrev">&#8249;</button>
+    <div class="works-slider" id="worksSlider">
+      <img src="img/ref/4.png"  alt="" onerror="this.style.display='none'">
+      <img src="img/kat/4.png"  alt="" onerror="this.style.display='none'">
+      <img src="img/kon/4.png"  alt="" onerror="this.style.display='none'">
+      <img src="img/kir/4.png"  alt="" onerror="this.style.display='none'">
+      <img src="img/ref/5.png"  alt="" onerror="this.style.display='none'">
+      <img src="img/kat/5.png"  alt="" onerror="this.style.display='none'">
+      <img src="img/kon/5.png"  alt="" onerror="this.style.display='none'">
+      <img src="img/kir/5.png"  alt="" onerror="this.style.display='none'">
+    </div>
+    <button class="slider-btn next" id="sliderNext">&#8250;</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer-wrap">
+  <div class="footer-info">
+    <div class="f-logo">
+      <img src="img/logo/logo.png" alt="logo" class="logo-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="icon-box" style="display:none">🔧</div>
+      <span>PROFFSERVICE</span>
+    </div>
+    <h3 data-i18n="nav_title"></h3>
+    <a href="tel:+998976829999" class="ci">📞 +998 97 682 99 99</a>
+    <a href="tel:+998336829999" class="ci">✈️ +998 33 682 99 99</a>
+    <div class="ci">📍 <span data-i18n="footer_city"></span></div>
+  </div>
+  <div class="footer-map">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191884.52282870073!2d69.0954711!3d41.2994958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2sTashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1"
+      allowfullscreen="" loading="lazy" title="Karta">
+    </iframe>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop">↑</button>
+<script src="script.js"></script>
+</body>
 </html>
