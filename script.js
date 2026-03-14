@@ -54,9 +54,41 @@ const translations = {
     cta3: "Качественные расходные материалы",
 
     about_title: "О компании",
-    about_p1: "Мы специализируемся на профессиональном ремонте бытовой техники любой сложности. Выполняем обслуживание и ремонт холодильников, стиральных машин, посудомоечных машин, кондиционеров, водонагревателей и другой техники для дома и офиса.",
-    about_p2: "Наша команда состоит из опытных специалистов, которые проводят точную диагностику, быстро выявляют неисправности и устраняют их с соблюдением всех технических норм. Мы работаем с различными брендами и моделями бытовой техники.",
+    about_p1: "Мы специализируемся на профессиональном ремонте бытовой техники любой сложности. Ремонт и установка котлов, установка и ремонт кондиционеров, стиральных машин, холодильников и другой техники для дома и офиса.",
+    about_p2: "Наша команда состоит из опытных специалистов, которые проводят точную диагностику, быстро выявляют неисправности и устраняют их с соблюдением всех технических норм. Мы работаем с котлами, кондиционерами и бытовой техникой различных брендов.",
     about_p3: "Используем только проверенные комплектующие и предоставляем гарантию на выполненные работы. Ценим время клиентов, поэтому обеспечиваем оперативный выезд и быстрый ремонт без лишних задержек.",
+
+    m1_title: "Ремонт кондиционера",
+    m1_q:     "Кондиционер выключился или выдаёт ошибку? Дома стало жарко?",
+    m1_desc:  "Heat Cool master — ремонт и установка кондиционеров по всему Ташкенту.",
+    m1_f1: "Приедем сегодня",
+    m1_f2: "Опытный мастер",
+    m1_f3: "Гарантия после ремонта",
+    m1_f4: "Диагностика и точная цена",
+
+    m2_title: "Ремонт котла",
+    m2_q:     "Котёл выключился или выдаёт ошибку? Дома стало холодно?",
+    m2_desc:  "Heat Cool master — ремонт котлов по всему Ташкенту.",
+    m2_f1: "Приедем сегодня",
+    m2_f2: "Опытный мастер",
+    m2_f3: "Гарантия после ремонта",
+    m2_f4: "Диагностика и точная цена",
+
+    m3_title: "Ремонт стиральной машины",
+    m3_q:     "Стиральная машина не работает? Бельё накапливается?",
+    m3_desc:  "Heat Cool master — ремонт стиральных машин по всему Ташкенту.",
+    m3_f1: "Приедем сегодня",
+    m3_f2: "Опытный мастер",
+    m3_f3: "Гарантия после ремонта",
+    m3_f4: "Диагностика и точная цена",
+
+    m4_title: "Ремонт холодильника",
+    m4_q:     "Холодильник перестал работать? Продукты начинают портиться?",
+    m4_desc:  "Heat Cool master — ремонт холодильников по всему Ташкенту.",
+    m4_f1: "Приедем сегодня",
+    m4_f2: "Опытный мастер",
+    m4_f3: "Гарантия после ремонта",
+    m4_f4: "Диагностика и точная цена",
 
     exp_title: "Более 10 лет опыта в ремонте и обслуживании техники",
     exp_sub:   "Быстрый выезд · Гарантия на работы · Честные цены",
@@ -117,9 +149,45 @@ const translations = {
     cta3: "Sifatli sarf materiallari",
 
     about_title: "Kompaniya haqida",
-    about_p1: "Biz har qanday murakkablikdagi maishiy texnikani professional ta'mirlashga ixtisoslashganmiz. Muzlatgichlar, kir yuvish mashinalari, idish yuvish mashinalari, konditsionerlar, suv isitgichlar va boshqa uy hamda ofis texnikasini xizmat ko'rsatish va ta'mirlashni amalga oshiramiz.",
-    about_p2: "Bizning jamoamiz barcha texnik me'yorlarga rioya qilgan holda aniq diagnostika o'tkazadigan, nosozliklarni tezda aniqlaydi va bartaraf etadigan tajribali mutaxassislardan iborat. Biz turli xil brendlar va maishiy texnika modellari bilan ishlaymiz.",
+    about_p1: "Biz har qanday murakkablikdagi maishiy texnikani professional ta'mirlashga ixtisoslashganmiz. Katyol ta'miri va o'rnatish, konditsionerlar o'rnatish va ta'mirlash, kir yuvish mashinasi, xaladelnik ta'miri va boshqa uy hamda ofis texnikasini xizmat ko'rsatish va ta'mirlashni amalga oshiramiz.",
+    about_p2: "Bizning jamoamiz barcha texnik me'yorlarga rioya qilgan holda aniq diagnostika o'tkazadigan, nosozliklarni tezda aniqlaydi va bartaraf etadigan tajribali mutaxassislardan iborat. Biz turli xil brendlardagi katyol, konditsioner va maishiy texnika modellari bilan ishlaymiz.",
     about_p3: "Faqat sinovdan o'tgan ehtiyot qismlardan foydalanamiz va bajarilgan ishlarimizga kafolat beramiz. Mijozlarimizning vaqtini qadrlaymiz, shuning uchun operativ chiqishni va ortiqcha kechikishlarsiz tezkor ta'mirni ta'minlaymiz.",
+
+    // Modal — Konditsioner
+    m1_title: "Konditsioner ta'miri",
+    m1_q:     "Kondetsioner o'chib qoldimi yoki xato berayaptimi? Uy issiq bo'lib ketdimi?",
+    m1_desc:  "Heat Cool master — Toshkent bo'yicha konditsioner ta'miri va o'rnatish.",
+    m1_f1: "Bugun yetib boramiz",
+    m1_f2: "Tajribali usta",
+    m1_f3: "Ishdan keyin kafolat",
+    m1_f4: "Diagnostika va aniq narx",
+
+    // Modal — Katyol
+    m2_title: "Katyol ta'miri",
+    m2_q:     "Katyolingiz o'chib qoldimi yoki xato berayaptimi? Uy sovuq bo'lib ketdimi?",
+    m2_desc:  "Heat Cool master — Toshkent bo'yicha katyol ta'miri.",
+    m2_f1: "Bugun yetib boramiz",
+    m2_f2: "Tajribali usta",
+    m2_f3: "Ishdan keyin kafolat",
+    m2_f4: "Diagnostika va aniq narx",
+
+    // Modal — Kir yuvish
+    m3_title: "Kir yuvish mashinasi ta'miri",
+    m3_q:     "Kir yuvish mashinasi ishlamayabdimi? Kiyimlaringiz kir bo'lib ko'payib kettimi?",
+    m3_desc:  "Heat Cool master — Toshkent bo'yicha kir yuvish mashinasi ta'miri bilan shug'illanamiz.",
+    m3_f1: "Bugun yetib boramiz",
+    m3_f2: "Tajribali usta",
+    m3_f3: "Ishdan keyin kafolat",
+    m3_f4: "Diagnostika va aniq narx",
+
+    // Modal — Xaladelnik
+    m4_title: "Xaladelnik ta'miri",
+    m4_q:     "Xaladelnik ishlamay qoldimi? Ichida mevalar, sabzavotlar aynib qolyabdimi?",
+    m4_desc:  "Heat Cool master — Toshkent bo'yicha xaladelnik ta'miri bilan shug'illanamiz.",
+    m4_f1: "Bugun yetib boramiz",
+    m4_f2: "Tajribali usta",
+    m4_f3: "Ishdan keyin kafolat",
+    m4_f4: "Diagnostika va aniq narx",
 
     exp_title: "Texnikani ta'mirlash va xizmat ko'rsatishda 10 yildan ortiq tajriba",
     exp_sub:   "Tezkor chiqish · Ishlarga kafolat · Halol narxlar",
@@ -180,9 +248,41 @@ const translations = {
     cta3: "Quality consumable materials",
 
     about_title: "About the Company",
-    about_p1: "We specialize in professional repair of home appliances of any complexity. We service and repair refrigerators, washing machines, dishwashers, air conditioners, water heaters and other appliances for home and office.",
-    about_p2: "Our team consists of experienced specialists who perform accurate diagnostics, quickly identify malfunctions and eliminate them in compliance with all technical standards. We work with various brands and models.",
+    about_p1: "We specialize in professional repair of home appliances of any complexity. Boiler repair and installation, air conditioner installation and repair, washing machines, refrigerators and other appliances for home and office.",
+    about_p2: "Our team consists of experienced specialists who perform accurate diagnostics, quickly identify malfunctions and eliminate them in compliance with all technical standards. We work with boilers, air conditioners and home appliances of various brands.",
     about_p3: "We use only proven components and provide a warranty on completed work. We value our clients' time, so we ensure prompt arrival and quick repair without unnecessary delays.",
+
+    m1_title: "Air Conditioner Repair",
+    m1_q:     "Has your air conditioner turned off or showing an error? Is your home too hot?",
+    m1_desc:  "Heat Cool master — air conditioner repair and installation across Tashkent.",
+    m1_f1: "We arrive today",
+    m1_f2: "Experienced technician",
+    m1_f3: "Warranty after repair",
+    m1_f4: "Diagnostics and exact price",
+
+    m2_title: "Boiler Repair",
+    m2_q:     "Has your boiler turned off or showing an error? Is your home too cold?",
+    m2_desc:  "Heat Cool master — boiler repair across Tashkent.",
+    m2_f1: "We arrive today",
+    m2_f2: "Experienced technician",
+    m2_f3: "Warranty after repair",
+    m2_f4: "Diagnostics and exact price",
+
+    m3_title: "Washing Machine Repair",
+    m3_q:     "Washing machine not working? Laundry piling up?",
+    m3_desc:  "Heat Cool master — washing machine repair across Tashkent.",
+    m3_f1: "We arrive today",
+    m3_f2: "Experienced technician",
+    m3_f3: "Warranty after repair",
+    m3_f4: "Diagnostics and exact price",
+
+    m4_title: "Refrigerator Repair",
+    m4_q:     "Refrigerator stopped working? Food starting to spoil?",
+    m4_desc:  "Heat Cool master — refrigerator repair across Tashkent.",
+    m4_f1: "We arrive today",
+    m4_f2: "Experienced technician",
+    m4_f3: "Warranty after repair",
+    m4_f4: "Diagnostics and exact price",
 
     exp_title: "More than 10 years of experience in appliance repair and maintenance",
     exp_sub:   "Fast arrival · Work warranty · Fair prices",
@@ -305,6 +405,38 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+
+  // ── MODAL ──
+  document.querySelectorAll('.btn-sm[data-modal]').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      const id = this.getAttribute('data-modal');
+      const t = translations[currentLang];
+      const modal = document.getElementById('serviceModal');
+      modal.querySelector('.modal-title').textContent  = t[id + '_title'] || '';
+      modal.querySelector('.modal-q').textContent      = t[id + '_q']     || '';
+      modal.querySelector('.modal-desc').textContent   = t[id + '_desc']  || '';
+      modal.querySelector('[data-mf="1"]').textContent = t[id + '_f1']    || '';
+      modal.querySelector('[data-mf="2"]').textContent = t[id + '_f2']    || '';
+      modal.querySelector('[data-mf="3"]').textContent = t[id + '_f3']    || '';
+      modal.querySelector('[data-mf="4"]').textContent = t[id + '_f4']    || '';
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  document.getElementById('modalClose').addEventListener('click', closeModal);
+  document.getElementById('serviceModal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') closeModal();
+  });
+
+  function closeModal() {
+    document.getElementById('serviceModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
 
   // ── THUMB ROW AUTO SLIDER ──
   const thumbTrack = document.querySelector('.thumb-track');

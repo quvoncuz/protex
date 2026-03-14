@@ -8,6 +8,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
+<!-- MODAL -->
+<div class="modal-overlay" id="serviceModal">
+  <div class="modal-box">
+    <button class="modal-close" id="modalClose">✕</button>
+    <div class="modal-title"></div>
+    <div class="modal-q"></div>
+    <div class="modal-desc"></div>
+    <ul class="modal-features">
+      <li data-mf="1"></li>
+      <li data-mf="2"></li>
+      <li data-mf="3"></li>
+      <li data-mf="4"></li>
+    </ul>
+    <div class="modal-actions">
+      <a href="tel:+998991575860" class="btn-yellow">📞 +998 99 157 58 60</a>
+      <a href="tel:+998931081001" class="btn-yellow">📞 +998 93 108 10 01</a>
+    </div>
+  </div>
+</div>
 <body>
 
 <!-- NAVBAR -->
@@ -71,7 +90,7 @@
             <li data-i18n="s1_li2"></li>
           </ul>
             <div class="btn-group">
-              <a href="#" class="btn-sm" data-i18n="btn_more"></a>
+              <a href="#" class="btn-sm" data-modal="m2" data-i18n="btn_more"></a>
               <a href="tel:+998931081001" class="btn-call">📞 TEL</a>
             </div>
         </div>
@@ -86,7 +105,7 @@
               <li data-i18n="s3_li2"></li>
             </ul>
           <div class="btn-group">
-            <a href="#" class="btn-sm" data-i18n="btn_more"></a>
+            <a href="#" class="btn-sm" data-modal="m1" data-i18n="btn_more"></a>
             <a href="tel:+998991575860" class="btn-call">📞 TEL</a>
           </div>
         </div>
@@ -103,7 +122,7 @@
           <li data-i18n="s6_li2"></li>
         </ul>
       <div class="btn-group">
-        <a href="#" class="btn-sm" data-i18n="btn_more"></a>
+        <a href="#" class="btn-sm" data-modal="m3" data-i18n="btn_more"></a>
         <a href="tel:+998991575860" class="btn-call">📞 TEL</a>
       </div>
     </div>
@@ -118,7 +137,7 @@
           <li data-i18n="s2_li2"></li>
         </ul>
         <div class="btn-group">
-          <a href="#" class="btn-sm" data-i18n="btn_more"></a>
+          <a href="#" class="btn-sm" data-modal="m4" data-i18n="btn_more"></a>
           <a href="tel:+998931081001" class="btn-call">📞 TEL</a>
         </div>
       </div>
@@ -154,14 +173,13 @@
       <p data-i18n="about_p2"></p>
       <p data-i18n="about_p3"></p>
       <div class="thumb-row">
-        <div class="thumb-track">
-          <img src="img/ref/2.png"  alt="" onerror="this.style.display='none'">
-          <img src="img/ref/3.png"  alt="" onerror="this.style.display='none'">
-          <img src="img/kon/2.png"  alt="" onerror="this.style.display='none'">
-          <img src="img/kir/2.png"  alt="" onerror="this.style.display='none'">
-          <img src="img/kir/3.png"  alt="" onerror="this.style.display='none'">
-          <img src="img/kat/3.png"  alt="" onerror="this.style.display='none'">
-          <img src="img/kat/main.png" alt="" onerror="this.style.display='none'">
+        <div class="thumb-track portrait">
+            <img src="img/ourwork/1.jpg"  alt="" onerror="this.style.display='none'">
+            <img src="img/ourwork/2.jpg"  alt="" onerror="this.style.display='none'">
+            <img src="img/ourwork/3.jpg"  alt="" onerror="this.style.display='none'">
+            <img src="img/ourwork/4.jpg"  alt="" onerror="this.style.display='none'">
+            <img src="img/ourwork/5.jpg"  alt="" onerror="this.style.display='none'">
+            <img src="img/ourwork/6.jpg"  alt="" onerror="this.style.display='none'">
         </div>
       </div>
       <a href="tel:+998991575860" class="about-phone">📞 +99899 157 58 60</a>

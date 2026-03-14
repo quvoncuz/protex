@@ -119,13 +119,9 @@ a { text-decoration: none; }
 .hero-content p { font-size: 18px; margin-bottom: 6px; color: #eee; }
 .hero-btns { display: flex; gap: 16px; justify-content: center; margin-top: 32px; flex-wrap: wrap; }
 .hero-logo {
-  width: 100px; height: 100px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 3px solid #f5a623;
-  padding: 3px;
-  margin: 0 auto 24px;
-  display: block;
+  width: 100px; height: 100px; object-fit: cover;
+  border-radius: 50%; border: 3px solid #f5a623;
+  padding: 3px; margin: 0 auto 24px; display: block;
 }
 
 /* ── SECTION SHARED ── */
@@ -152,17 +148,9 @@ a { text-decoration: none; }
 .card-body .btn-group { display: flex; flex-direction: row; gap: 10px; align-items: stretch; }
 .card-body .btn-group .btn-sm { flex: 1; text-align: center; }
 .btn-call {
-  flex: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #f5a623;
-  color: #fff;
-  font-size: 18px;
-  padding: 10px 16px;
-  border-radius: 8px;
-  line-height: 1;
-  transition: background .2s;
+  flex: 1; display: inline-flex; align-items: center; justify-content: center;
+  background: #f5a623; color: #fff; font-size: 18px;
+  padding: 10px 16px; border-radius: 8px; line-height: 1; transition: background .2s;
 }
 .btn-call:hover { background: #e09010; }
 .card-body ul li {
@@ -172,26 +160,17 @@ a { text-decoration: none; }
 .card-body ul li::before { content: '✓'; color: #f5a623; font-weight: 700; flex-shrink: 0; }
 
 /* ── CTA SECTION ── */
-.cta-section {
-  padding: 0;
-  overflow: hidden;
-}
+.cta-section { padding: 0; overflow: hidden; }
 
 /* ── CTA BANNERS ── */
 .cta-banners {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  gap: 4px;
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  width: 100%; gap: 4px;
 }
 .cta-banner {
-  position: relative;
-  min-height: 240px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 28px;
-  overflow: hidden;
+  position: relative; min-height: 240px;
+  display: flex; flex-direction: column; justify-content: flex-end;
+  padding: 28px; overflow: hidden;
 }
 .cta-banner:first-child { border-radius: 12px 0 0 12px; overflow: hidden; }
 .cta-banner:last-child  { border-radius: 0 12px 12px 0; overflow: hidden; }
@@ -208,23 +187,19 @@ a { text-decoration: none; }
 .about-text { flex: 1; }
 .about-text h2 { font-size: 24px; font-weight: 800; margin-bottom: 16px; }
 .about-text p { font-size: 15px; color: #555; line-height: 1.7; margin-bottom: 14px; }
+
 /* Thumb row slider */
-.thumb-row {
-  position: relative;
-  overflow: hidden;
-  margin-top: 20px;
-}
-.thumb-track {
-  display: flex;
-  gap: 8px;
-  transition: transform 0.5s ease;
-}
+.thumb-row { position: relative; overflow: hidden; margin-top: 20px; }
+.thumb-track { display: flex; gap: 8px; transition: transform 0.5s ease; }
 .thumb-track img {
-  width: calc(25% - 6px);
-  height: 80px;
-  object-fit: cover;
-  border-radius: 6px;
-  flex-shrink: 0;
+  width: calc(25% - 6px); height: 80px;
+  object-fit: cover; border-radius: 6px; flex-shrink: 0;
+}
+
+/* Vertikal (portrait) rasmlar uchun */
+.thumb-track.portrait img {
+  width: calc(25% - 6px); height: 140px;
+  object-fit: cover; border-radius: 6px; flex-shrink: 0;
 }
 .about-phone {
   display: inline-flex; align-items: center; gap: 10px;
@@ -289,6 +264,45 @@ a.ci:hover { color: #f5a623; }
 .footer-map { flex: 1; }
 .footer-map iframe { width: 100%; height: 100%; border: none; display: block; min-height: 280px; }
 
+/* ── MODAL ── */
+.modal-overlay {
+  position: fixed; inset: 0; z-index: 1000;
+  background: rgba(0,0,0,0.6);
+  display: flex; align-items: center; justify-content: center;
+  padding: 20px;
+  opacity: 0; pointer-events: none;
+  transition: opacity .3s;
+}
+.modal-overlay.open { opacity: 1; pointer-events: all; }
+.modal-box {
+  background: #fff; border-radius: 16px;
+  padding: 36px 32px; max-width: 500px; width: 100%;
+  position: relative;
+  transform: translateY(20px);
+  transition: transform .3s;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+.modal-overlay.open .modal-box { transform: translateY(0); }
+.modal-close {
+  position: absolute; top: 16px; right: 16px;
+  background: none; border: none; font-size: 22px;
+  cursor: pointer; color: #888; line-height: 1; transition: color .2s;
+}
+.modal-close:hover { color: #222; }
+.modal-title { font-size: 22px; font-weight: 800; margin-bottom: 12px; color: #222; padding-right: 24px; }
+.modal-q { font-size: 15px; color: #f5a623; font-weight: 600; margin-bottom: 10px; line-height: 1.5; }
+.modal-desc { font-size: 14px; color: #555; margin-bottom: 20px; line-height: 1.6; }
+.modal-features { list-style: none; margin-bottom: 24px; }
+.modal-features li {
+  font-size: 14px; font-weight: 600; color: #333;
+  padding: 10px 0; border-bottom: 1px solid #f0f0f0;
+  display: flex; align-items: center; gap: 10px;
+}
+.modal-features li::before { content: '✓'; color: #f5a623; font-weight: 800; font-size: 16px; }
+.modal-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.modal-actions .btn-yellow { flex: 1; text-align: center; font-size: 14px; padding: 12px 16px; }
+
 /* ── SCROLL TOP ── */
 .scroll-top {
   position: fixed; bottom: 28px; right: 28px;
@@ -340,6 +354,8 @@ a.ci:hover { color: #f5a623; }
   .footer-wrap { flex-direction: column; }
   .footer-info { width: 100%; padding: 28px 20px; }
 
+  .modal-box { padding: 28px 24px; }
+
   .scroll-top { bottom: 20px; right: 20px; }
 }
 
@@ -380,6 +396,7 @@ a.ci:hover { color: #f5a623; }
   .about-text h2 { font-size: 20px; }
   .about-text p { font-size: 14px; }
   .thumb-track img { width: calc(25% - 6px); height: 70px; }
+  .thumb-track.portrait img { width: calc(25% - 6px); height: 160px; }
   .about-img { display: none; }
   .about-phone { font-size: 14px; padding: 10px 16px; }
 
@@ -398,6 +415,11 @@ a.ci:hover { color: #f5a623; }
   .f-logo span { font-size: 13px; }
   .ci { font-size: 13px; }
   .footer-map iframe { min-height: 220px; }
+
+  .modal-box { padding: 24px 18px; border-radius: 12px; }
+  .modal-title { font-size: 18px; }
+  .modal-actions { flex-direction: column; }
+  .modal-actions .btn-yellow { width: 100%; }
 
   .scroll-top { bottom: 14px; right: 14px; width: 36px; height: 36px; font-size: 16px; }
 }
