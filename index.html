@@ -41,11 +41,17 @@
     <a href="#" aria-label="Instagram"><img src="img/logo/instagram.png" alt=""></a>
     <a href="#" aria-label="Telegram"><img src="img/logo/telegram.png" alt=""></a>
   </div>
-  <div class="lang-switcher">
-    <button class="lang-btn active" data-lang="ru">RU</button>
+  <div class="lang-switcher" id="langSwitcher">
+  <button class="lang-current" id="langCurrent">
+    <span id="langLabel">RU</span>
+    <span class="arrow">▼</span>
+  </button>
+  <div class="lang-dropdown">
+    <button class="lang-btn" data-lang="ru">RU</button>
     <button class="lang-btn" data-lang="uz">UZ</button>
     <button class="lang-btn" data-lang="en">EN</button>
   </div>
+</div>
   <a href="tel:+998991575860" class="nav-phone">+998 99 157 58 60</a>
   <button class="burger" id="burger">&#9776;</button>
 </nav>

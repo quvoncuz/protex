@@ -320,6 +320,10 @@ function applyLanguage(lang) {
   document.querySelectorAll('.lang-btn').forEach(function (btn) {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
+
+  // Dropdown label yangilash
+  const label = document.getElementById('langLabel');
+  if (label) label.textContent = lang.toUpperCase();
 }
 
 // ── DOM TAYYOR ───────────────────────────────
@@ -329,7 +333,23 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.lang-btn').forEach(function (btn) {
     btn.addEventListener('click', function () {
       applyLanguage(this.dataset.lang);
+      // Dropdown yopish
+      document.getElementById('langSwitcher').classList.remove('open');
     });
+  });
+
+  // Dropdown ochish/yopish
+  const langSwitcher = document.getElementById('langSwitcher');
+  const langCurrent  = document.getElementById('langCurrent');
+  if (langCurrent) {
+    langCurrent.addEventListener('click', function (e) {
+      e.stopPropagation();
+      langSwitcher.classList.toggle('open');
+    });
+  }
+  // Tashqariga bosganda yopish
+  document.addEventListener('click', function () {
+    if (langSwitcher) langSwitcher.classList.remove('open');
   });
 
   // Boshlang'ich til
